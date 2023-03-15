@@ -23,7 +23,7 @@ const cards = data.map(card => {
 })
 const Experience = () => {
     return (
-        <section className='default-section'>
+        <section className='default-section' id='experience'>
             <div className='align-title-left'><h3 className='sub-title-green'>Experience</h3></div>
             <div className='align-text'>
                 {cards}

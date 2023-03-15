@@ -16,7 +16,7 @@ const code = codeSkills.map(x => {
 
 const Skills = () => {
     return (
-        <section className='default-section'>
+        <section className='default-section' id='skills'>
             <div className='align-title-left'><h3 className='sub-title-green'>Skills</h3></div>
             <div className='align-item'>{code}</div>
 

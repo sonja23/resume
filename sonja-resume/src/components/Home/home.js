@@ -1,11 +1,9 @@
 import React from "react";
-import Image from '../../assets/img/picture.jpg'
-import About from "../About/about";
-import Skills from "../Skills/skills";
+import Image from '../../assets/img/picture.jpg';
 
 function CenterSection() {
     return (
-        <section className="center-section">
+        <section className="center-section" id="home">
             <div className="column">
                 <h2 className="name">Hi, I am <span className="highlight-name">Sonja</span></h2>
                 <h4>I am a Junior Engineer</h4>

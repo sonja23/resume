@@ -1,29 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
-const linkStyle = {
-    margin: "1rem",
-    textDecoration: "none",
-    color: '#023047',
-    fontFamily: 'Arial',
-};
 export default function Navbar() {
     return (
-
-        <div>
+        <header>
             <nav className='navbar'>
                 <ul className="nav-links">
-
                     <li className="nav-item">
-                        <Link to="/" style={linkStyle}>Home</Link>
+                        <Link to="home" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
                     </li>
-                    <li className="nav-item"><Link style={linkStyle} to="/about">About</Link></li>
-                    <li className="nav-item"><Link style={linkStyle} to="/experience">Experience</Link></li>
-                    <li className="nav-item"><Link style={linkStyle} to="/skills">Skills</Link></li>
-
+                    <li className="nav-item"><Link to="about" spy={true} smooth={true} offset={50} duration={500}>About</Link></li>
+                    <li className="nav-item"><Link to="skills" spy={true} smooth={true} offset={50} duration={500}>Skills</Link></li>
+                    <li className="nav-item"><Link to="education" spy={true} smooth={true} offset={50} duration={500}>Education</Link></li>
+                    <li className="nav-item"><Link to="experience" spy={true} smooth={true} offset={50} duration={500} >Experience</Link></li>
                 </ul>
             </nav>
-        </div>
+        </header>
 
     )
 }

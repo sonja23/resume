@@ -28,7 +28,7 @@ const cards = data.map(card => {
 const Education = () => {
     return (
         <div className='green-background'>
-            <section className='color-section'>
+            <section className='color-section' id='education'>
 
                 <div className='align-sub-title'><h3 className='sub-title-white'>Education</h3></div>
 
